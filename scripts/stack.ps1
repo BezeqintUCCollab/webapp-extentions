@@ -9,7 +9,7 @@ Set-SmbServerConfiguration -EnableSMB2Protocol $true
 $connectTestResult = Test-NetConnection -ComputerName "shdr.file.core.windows.net" -Port 445
 if ($connectTestResult.TcpTestSucceeded) {
     # Save the password so the drive will persist on reboot (ensure cmdkey command is valid)
-    cmd.exe /C "cmdkey /add:`"shdr.file.core.windows.net`" /user:`"shdr\shdr`" /pass:$env:accessKey"
+    cmd.exe /C "cmdkey /add:`"shdr.file.core.windows.net`" /user:$env:storageAccountName /pass:$env:storageAccountKey"
 
     # Mount the drive
     New-PSDrive -Name L -PSProvider FileSystem -Root "\\shdr.file.core.windows.net\webappfiles" -Persist
