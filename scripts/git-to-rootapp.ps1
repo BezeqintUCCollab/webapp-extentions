@@ -15,16 +15,16 @@ $destinationFolder = "C:\inetpub\wwwroot"
 # הורדת קובץ ה-ZIP ל-C:\temp
 Invoke-WebRequest -Uri $githubRepoUrl -OutFile "$tempFolder\webapp.zip"
 
-# חליצה של קובץ ה-ZIP ל-C:\inetpub\wwwroot
-Expand-Archive -Path "$tempFolder\webapp.zip" -DestinationPath $destinationFolder -Force
+# חליצה של קובץ ה-ZIP ל-C:\temp
+Expand-Archive -Path "$tempFolder\webapp.zip" -DestinationPath $tempFolder -Force
 
-# העתקת הקבצים מתוך תיקיית files-for-webapp (בהתאם למבנה GitHub)
-$sourceFolder = "$destinationFolder\<repo>-main\files-for-webapp\"
+# העתקת הקבצים מתוך תיקיית files-for-webapp ישירות ל-wwwroot
+$sourceFolder = Join-Path -Path $tempFolder -ChildPath "webapp-extentions-main\files-for-webapp\"
 Copy-Item -Path "$sourceFolder*" -Destination $destinationFolder -Recurse -Force
 
 # הסרת קובץ ה-ZIP והתיקיה הזמנית שנוצרה
 Remove-Item -Path "$tempFolder\webapp.zip" -Force
-Remove-Item -Path "$destinationFolder\<repo>-main" -Recurse -Force
+Remove-Item -Path "$tempFolder\webapp-extentions-main" -Recurse -Force
 
 # הגדרת הרשאות לקריאה וכתיבה על הקבצים
 $acl = Get-Acl "$destinationFolder"

@@ -1,0 +1,187 @@
+>az storage blob upload-batch ^
+More?   --account-name shdr ^
+More?   --account-key abcd== ^
+More?   --source C:\wwwroot\ ^
+More?   --destination wwwroot
+[
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder1/SubFolder1/1.txt",
+    "Last Modified": "2024-12-15T11:58:14+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1B2103E\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder1/SubFolder1/2.txt",
+    "Last Modified": "2024-12-15T11:58:14+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1B430BA\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder1/SubFolder2/1.txt",
+    "Last Modified": "2024-12-15T11:58:14+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1B69EFA\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder1/SubFolder2/2.txt",
+    "Last Modified": "2024-12-15T11:58:14+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1B8BF76\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder1/SubFolder3/1.txt",
+    "Last Modified": "2024-12-15T11:58:14+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1BB2DBF\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder1/SubFolder3/2.txt",
+    "Last Modified": "2024-12-15T11:58:14+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1BD7525\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder2/SubFolder1/1.txt",
+    "Last Modified": "2024-12-15T11:58:14+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1BF9598\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder2/SubFolder1/2.txt",
+    "Last Modified": "2024-12-15T11:58:14+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1C18F2A\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder2/SubFolder2/1.txt",
+    "Last Modified": "2024-12-15T11:58:14+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1C3FD75\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder2/SubFolder2/2.txt",
+    "Last Modified": "2024-12-15T11:58:14+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1C5F70D\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder2/SubFolder3/1.txt",
+    "Last Modified": "2024-12-15T11:58:14+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1C83E72\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder2/SubFolder3/2.txt",
+    "Last Modified": "2024-12-15T11:58:14+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1CA85D3\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder3/SubFolder1/1.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1CCF40E\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder3/SubFolder1/2.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1D09970\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder3/SubFolder2/1.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1D2E0D3\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder3/SubFolder2/2.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1D5283C\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder3/SubFolder3/1.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1D748AF\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder3/SubFolder3/2.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1D9900D\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder4/SubFolder1/1.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1DBD76B\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder4/SubFolder1/2.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1DE1ED2\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder4/SubFolder2/1.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1E01864\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder4/SubFolder2/2.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1E25FCD\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder4/SubFolder3/1.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1E48041\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder4/SubFolder3/2.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1E6A0C1\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder5/SubFolder1/1.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1E90F07\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder5/SubFolder1/2.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1EB2F83\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder5/SubFolder2/1.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1ED2913\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder5/SubFolder2/2.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1EF7074\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder5/SubFolder3/1.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1F25361\""
+  },
+  {
+    "Blob": "https://shdr.blob.core.windows.net/wwwroot/Folder5/SubFolder3/2.txt",
+    "Last Modified": "2024-12-15T11:58:15+00:00",
+    "Type": "text/plain",
+    "eTag": "\"0x8DD1CFFC1F44CF7\""
+  }
+]
