@@ -3,7 +3,7 @@ $targetDirectory = "C:\inetpub\wwwroot"
 $mountDrive = "L:"  # The drive letter where the file share is mounted
 
 # Enable SMB2 protocol before performing any operations
-Set-SmbServerConfiguration -EnableSMB2Protocol $true
+Set-SmbServerConfiguration -EnableSMB2Protocol $true -Force
 
 # Mount the Azure File Share
 $connectTestResult = Test-NetConnection -ComputerName "shdr.file.core.windows.net" -Port 445
@@ -64,5 +64,6 @@ try {
 
 
 # Disable SMB2 protocol after the file copy operation
-Set-SmbServerConfiguration -EnableSMB2Protocol $false
+Set-SmbServerConfiguration -EnableSMB2Protocol $false -Force
+
 Write-Host "SMB2 protocol has been disabled."
