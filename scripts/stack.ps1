@@ -28,21 +28,16 @@ if (-not (Test-Path -Path $targetDirectory)) {
 
 # Copy files from the mounted Azure File Share to the target directory
 try {
-    # סרוק את כל הקבצים בתיקיה המקורית
     $sourceFiles = Get-ChildItem -Path "$mountDrive\*" -Recurse
     foreach ($file in $sourceFiles) {
-        # בודק אם מדובר בקובץ ולא בתיקייה
         if (-not $file.PSIsContainer) {
-            # יצירת נתיב ביעד שמכבד את מבנה התיקיות
             $destinationPath = Join-Path -Path $targetDirectory -ChildPath $file.FullName.Substring($mountDrive.Length)
             
-            # יצירת תיקייה ביעד אם היא לא קיימת
             $destinationFolder = Split-Path -Path $destinationPath -Parent
             if (-not (Test-Path -Path $destinationFolder)) {
                 New-Item -ItemType Directory -Path $destinationFolder
             }
             
-            # העתקת הקובץ ליעד
             Copy-Item -Path $file.FullName -Destination $destinationPath -Force -ErrorAction Stop
             Write-Host "File $($file.FullName) copied/updated successfully."
         }
